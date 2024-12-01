@@ -54,3 +54,12 @@ Style/SymbolArray:
 
 Style/WordArray:
   EnforcedStyle: brackets
+
+Style/NumberedParameters:
+  Enabled: false
+
+Style/NumberedParametersLimit:
+  Enabled: false
+
+RSpec/SpecFilePathFormat:
+  Enabled: false
