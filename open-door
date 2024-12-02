@@ -13,6 +13,12 @@ require "fileutils"
 puzzle_title = ARGV.shift
 day, puzzle_name = /Day (\d+): (.*)/.match(puzzle_title).values_at(1, 2)
 
+sample = ""
+puts "Paste sample then type 'END':"
+while (sample_line = gets.chomp) != "END"
+  sample += "        #{sample_line}\n"
+end
+
 day_string = format("%02d", day)
 puzzle_name_underscore = puzzle_name.downcase.gsub(" ", "_")
 puzzle_name_class = puzzle_name.gsub(" ", "")
@@ -23,6 +29,10 @@ puzzle_class = <<~RUBY
 
   class #{puzzle_name_class}
     include NewlineInput
+
+    def foo
+      0
+    end
   end
 RUBY
 
@@ -35,14 +45,28 @@ spec = <<~RUBY
   describe #{puzzle_name_class}, day: #{day} do
     subject(:#{puzzle_name_underscore}) { described_class.new(input) }
 
-    context "with sample input", sample: true do
+    context "with sample input", :sample do
       let(:input) do
         <<~INPUT
+          #{sample.strip}
         INPUT
       end
 
       it "TODO", part: 1 do
+        expect(#{puzzle_name_underscore}.foo).to eq(0)
       end
+
+      it "TODO", part: 1 do
+        expect(#{puzzle_name_underscore}.foo).to eq(0)
+      end
+    end
+
+    it "TODO", part: 1 do
+      expect(#{puzzle_name_underscore}.foo).to eq(0)
+    end
+
+    it "TODO", part: 2 do
+      expect(#{puzzle_name_underscore}.foo).to eq(0)
     end
   end
 RUBY
