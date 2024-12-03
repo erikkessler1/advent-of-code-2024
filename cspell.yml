@@ -1,4 +1,6 @@
 language: en-US
+ignorePaths:
+  - "**/*/input.txt"
 words:
   - fileutils
   - gsub

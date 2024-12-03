@@ -56,7 +56,7 @@ spec = <<~RUBY
         expect(#{puzzle_name_underscore}.foo).to eq(0)
       end
 
-      it "TODO", part: 1 do
+      it "TODO", part: 2 do
         expect(#{puzzle_name_underscore}.foo).to eq(0)
       end
     end
