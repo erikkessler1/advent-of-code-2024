@@ -66,3 +66,6 @@ RSpec/SpecFilePathFormat:
 
 Naming/VariableNumber:
   EnforcedStyle: snake_case
+
+Style/RaiseArgs:
+  EnforcedStyle: compact
