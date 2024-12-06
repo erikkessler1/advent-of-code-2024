@@ -69,3 +69,6 @@ Naming/VariableNumber:
 
 Style/RaiseArgs:
   EnforcedStyle: compact
+
+Metrics/BlockLength:
+  Enabled: false
