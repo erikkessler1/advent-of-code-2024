@@ -2,6 +2,8 @@ language: en-US
 ignorePaths:
   - "**/*/input.txt"
 words:
+  - antinodes
+  - collinearity
   - fileutils
   - gsub
   - srand
