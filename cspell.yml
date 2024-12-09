@@ -5,5 +5,6 @@ words:
   - antinodes
   - collinearity
   - fileutils
+  - fragmenter
   - gsub
   - srand
