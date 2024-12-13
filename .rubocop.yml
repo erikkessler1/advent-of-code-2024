@@ -72,3 +72,6 @@ Style/RaiseArgs:
 
 Metrics/BlockLength:
   Enabled: false
+
+Metrics/ParameterLists:
+  Enabled: false
