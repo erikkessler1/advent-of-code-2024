@@ -3,6 +3,7 @@ ignorePaths:
   - "**/*/input.txt"
 words:
   - antinodes
+  - chronospatial
   - collinearity
   - fileutils
   - fragmenter
